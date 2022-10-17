@@ -28,6 +28,37 @@ body {
   z-index: 1;
 }
 
+.header-content1 h2{
+  animation: fade 1s ease 1;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+  opacity: 0;
+  transition: opacity;
+}
+.header-content2 h2{
+  animation: fade 1s ease 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  transition: opacity;
+}
+
+.header-content3 h2{
+  animation: fade 1s ease 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+  opacity: 0;
+  transition: opacity;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
 .nav-list {
   display: flex;
   justify-content: space-evenly;
