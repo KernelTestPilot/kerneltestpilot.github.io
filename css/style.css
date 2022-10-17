@@ -99,6 +99,11 @@ body {
 .header-content3 {
   background-color: #fab131;
 }
+:is(header, .header-container2):has(article:hover) article:not(:hover){
+  opacity: 0.1;
+ 
+  
+}
 
 .white-text {
   color: #fff;
