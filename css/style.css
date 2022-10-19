@@ -293,8 +293,19 @@ body {
 
 }
 
+.contact-header {
+  background: url("/img/man-baby.png") #c7ddea;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 10em 0;
+}
+
+.contact-header h2 {
+  max-width: 7em;
+}
+
 .page-contact {
-  background: url("/img/find-us-here-map.png") #a9a19e;
+  background: url("/img/find-us-here-map.webp") #a9a19e;
   background-position: bottom;
   background-repeat: no-repeat;
   background-position-y: 550px;
@@ -309,14 +320,15 @@ body {
   padding: 1em;
 }
 
-.contact-form h1 {
+.contact-container h1 {
   padding-top: .6em;
 }
 
-.contact-form h4 {
+.contact-form label {
   font-family: Paragraphs;
   font-size: .8em;
   padding: .2em;
+  font-weight: 700;
 }
 
 .email-adress {
@@ -394,6 +406,27 @@ body {
 
   .main-container {
     background: linear-gradient(180deg, #a9a19e 50%, #fab131 50%);
+  }
+
+  .contact-container {
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .contact-container {
+    padding-top: 2em;
+  }
+
+  .contact-header {
+    background-position-x: 90%;
+  }
+
+  .contact-header h2 {
+    max-width: 100%;
+  }
+
+  .visit-us {
+    height: 35vw;
   }
 
   .main-content {
