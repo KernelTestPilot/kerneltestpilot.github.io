@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+
+}
+table, th, td {
+    border-collapse: collapse;
+
+ margin: auto;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  th {
+   
+  }
+  .th-bg{
+    background-color: #6563e6;
+  }
+
+  .th-bg2{
+    background-color: #c74f4f;
+
+  }
+
+  .formclass{
+    
+    display: inline-block;
+  }
+  .failAlert{
+    background-color: #c74f4f;
+    font-size: large;
+  }
