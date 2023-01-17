@@ -36,14 +36,23 @@ class travelBot {
     }
     getResult(input, maincontainer){
       this.searchHelper(input).then((data) => {
+        while (maincontainer.firstChild) {
+          maincontainer.removeChild(maincontainer.firstChild);
+      }
          for (let i = 0; i < data.stopLocationOrCoordLocation.length; i++) {
           const option = document.createElement("option");
           option.value = data.stopLocationOrCoordLocation[i].StopLocation.name;
           maincontainer.appendChild(option);
           }
       })          
-     
     }
+    removeOption(){
+      const options = querySelectorAll("option");
+      for (let i = 0; i < options.length; i++) {
+      options[i].remove();
+      }
+    }
+
     searchHelper(input){
       return fetch("https://api.resrobot.se/v2.1/location.name?input="+input+"?&format=json&accessId="+this.APIkey+"")
       .then((response) => response.json())
@@ -64,6 +73,7 @@ class travelBot {
       })
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         this.renderData(data)
       })
       .catch(error => {
