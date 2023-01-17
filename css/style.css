@@ -2,10 +2,12 @@ body{
     text-align: center;
 
 }
-table, th, td {
-    border-collapse: collapse;
 
+table, th, td {
+  background-color: #10101020;
+    border-collapse: collapse;
  margin: auto;
+
   }
   th, td {
     padding: 15px;
@@ -15,12 +17,16 @@ table, th, td {
    
   }
   .th-bg{
-    background-color: #6563e6;
+    background-color: #ceceec;
   }
 
   .th-bg2{
-    background-color: #c74f4f;
+    background-color: #6350f59e;
 
+  }
+  .th-bg3{
+    background-color: #f3ebeb;
+    font-style:italic
   }
 
   .formclass{

@@ -34,12 +34,12 @@ class renderData {
         for (let i = 0; i < this.trip.length; i++) {
            let time = this.calcTime(this.trip[i].Origin.time,this.trip[i].Destination.time,this.trip[i].Origin.date, this.trip[i].Destination.date )
             let rows = table.insertRow();         
-            this.createTh("avgång", rows,"th-bg2");
+            this.createTh("Avgång", rows,"th-bg2");
             this.createTh("", rows, "th-bg2");
-            this.createTh("nr", rows, "th-bg2");
-            this.createTh("Totalrestid:" +time+" min", rows, "th-bg");
+            this.createTh("No.", rows, "th-bg3");
+            this.createTh("Total restid:" +time+" min", rows, "th-bg");
             this.createTh("", rows, "th-bg");
-            this.createTh("ankomst", rows,"th-bg2");
+            this.createTh("Ankomst", rows,"th-bg2");
             for (let a = 0; a < this.trip[i].LegList.Leg.length; a++) {
     
                 let row = table.insertRow();
