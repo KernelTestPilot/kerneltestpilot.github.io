@@ -72,9 +72,9 @@ class renderData {
       </div>`;
         }
            else if(id == "ULT"){
-            iconCell.innerHTML = `<div class="icon has-text-info">
+            iconCell.innerHTML = `<div class="icon has-text-black-bis">
             
-            <i class="fa-solid fa-train-subway fa-lg"></i>
+            <i class="fa-solid fa-t"></i>
           </div>`;
            } else if(id == "JAX" || id == "JLT" || id== "JRE" || id == "JIC" || id == "JPT" || id == "JEX" || id == "JST" | id == "J"){
             iconCell.innerHTML = `<div class="icon has-text-info">
