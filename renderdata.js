@@ -28,7 +28,6 @@ class renderData {
         return time.substring(0, time.length - 3);
     }
     renderTable(){
-        this.getTrips();
         let table = document.createElement("table");
         table.className = "table"
         for (let i = 0; i < this.trip.length; i++) {

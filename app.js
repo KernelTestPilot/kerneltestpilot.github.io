@@ -6,6 +6,7 @@ class travelBot {
     renderData(depatures){
         failAlert.style.display = "none"
         const render = new renderData(depatures);
+        render.getTrips();
         render.renderTable();
     }
     sendID(ID){
